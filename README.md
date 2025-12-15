@@ -8,209 +8,177 @@
 
 Manage your shader, compositor, and geometry node groups like a pro with full version control, tagging, search, and import/export capabilities.
 
+## 📥 Installation
+
+1. Download `node_library_manager.py`
+2. Open Blender → **Edit** → **Preferences** → **Add-ons**
+3. Click **Install** and select the file
+4. Enable **Node Group Library Manager**
+5. Open Shader Editor or Compositor and press **N** to see the panel
+
+![Installation Screenshot - Placeholder]
+
+---
+
 ## ✨ Features
 
-### 🎯 Core Functionality
-- **Version Control**: Save multiple versions of node groups with detailed notes
-- **One-Click Adding**: Click any library item to instantly add it to your editor
-- **Smart Selection**: Recognizes currently selected node groups, not entire trees
-- **Cross-Editor Support**: Works in Shader Editor, Compositor, and Geometry Nodes
+### Version Control
+- Save multiple versions of each node group
+- Add version notes to track changes
+- Restore any previous version instantly
+- View version history with timestamps
 
-### 🎨 Organization
-- **Tags System**: Organize with custom tags (metal, procedural, PBR, etc.)
-- **Search & Filter**: Instant search by name or tags
-- **Smart Sorting**: Sort by name, date, or version count
-- **Collapsible History**: Expand to see detailed version history
+### Smart Organization
+- Tag your node groups for easy discovery
+- Search by name or tag
+- Sort by name, date, or version count
+- Collapsible version history
 
-### 💾 Library Management
-- **Custom Storage Path**: Choose where to store your library
-- **Export/Import**: Share libraries as ZIP files or backup entire collections
-- **Version Cleanup**: Delete specific versions or entire node groups
-- **Open Library Folder**: Quick access to library files
+### Easy Workflow
+- Click any node group to add it to your editor
+- Works in Shader Editor, Compositor, and Geometry Nodes
+- One-click save from selected node groups
+- Clean, intuitive interface
 
-### 🎯 User Experience
-- **Clean UI**: Modern, intuitive interface in the N-panel
-- **Visual Feedback**: Clear icons and status messages
-- **Empty State Guidance**: Helpful instructions when starting out
-- **Formatted Timestamps**: Human-readable dates and times
+### Backup & Sharing
+- Export entire library as ZIP
+- Import libraries from other users
+- Set custom storage location
+- Open library folder directly
 
-## 📦 Installation
-
-### Method 1: Download Release
-1. Download the latest `node_library_manager.zip` from [Releases](../../releases)
-2. In Blender, go to `Edit` → `Preferences` → `Add-ons`
-3. Click `Install...` and select the downloaded ZIP
-4. Enable "Node Group Library Manager"
-
-### Method 2: Manual Installation
-1. Download `node_library_manager.py`
-2. In Blender, go to `Edit` → `Preferences` → `Add-ons`
-3. Click `Install...` and select the `.py` file
-4. Enable "Node Group Library Manager"
+---
 
 ## 🚀 Quick Start
 
-### Saving Node Groups
+### Saving a Node Group
 
-1. **Create or select a node group** in Shader Editor, Compositor, or Geometry Nodes
-2. **Select the group node** (not just being inside it)
-3. Open the **N-panel** and find the "Node Library" tab
-4. Click the **"Save"** button
-5. Add version notes and tags (optional)
-6. Done! Your node group is now in the library
+1. **Create or select** a node group in your editor
+2. **Click the node group node** to select it
+3. **Click "Save"** in the Node Library panel
+4. **Add version notes and tags** (optional)
+5. Done! Your node group is now in the library
 
-### Using Node Groups
+![Save Screenshot - Placeholder]
 
-1. Open the **N-panel** in any node editor
-2. Find your node group in the library
+### Using a Saved Node Group
+
+1. **Open** Shader Editor or Compositor
+2. **Find your node group** in the library panel
 3. **Click the node group name** to add it to your editor
 4. The node appears at your cursor location
 
-### Version Management
+![Add Screenshot - Placeholder]
 
-- **View versions**: Click the arrow next to a node group to expand
-- **Use specific version**: Click the import icon next to any version
-- **Delete version**: Click the X icon next to a version
-- **Delete node group**: Click the trash icon next to the node group name
+### Version History
+
+Click the **arrow** next to any node group to see all versions:
+- View version notes and dates
+- Import specific versions
+- Delete old versions
+
+![Version History Screenshot - Placeholder]
+
+---
 
 ## 📖 Usage Guide
 
+### The Panel
+
+![Main Panel Screenshot - Placeholder]
+
+**Top Section:**
+- Shows currently selected node group
+- "Save" button to add to library
+
+**Search & Sort:**
+- Search bar filters by name and tags
+- Sort dropdown (Name, Date, Versions)
+
+**Library:**
+- All your saved node groups
+- Click to add to editor
+- Expand arrow shows version history
+- Trash icon deletes entire node group
+
 ### Tags
-Add comma-separated tags when saving:
+
+Add tags when saving to organize your library:
 ```
 metal, procedural, PBR
 ```
 
-Tags appear as `#metal #procedural #PBR` and are searchable.
+Tags appear with # symbols and are searchable.
 
-### Search
-Type in the search bar to filter by:
-- Node group name
-- Any tag
+![Tags Screenshot - Placeholder]
 
-### Sorting
-- **Name**: Alphabetical order
-- **Date**: Most recently updated first
-- **Versions**: Most versions first
+### Preferences
 
-### Custom Storage Path
-1. Go to `Edit` → `Preferences` → `Add-ons`
-2. Find "Node Group Library Manager"
-3. Set your custom library path
-4. Library automatically moves to new location
+Access in **Edit** → **Preferences** → **Add-ons** → **Node Group Library Manager**
 
-### Backup & Sharing
-**Export Library:**
-1. Go to addon preferences
-2. Click "Export Library"
-3. Save as ZIP file
+![Preferences Screenshot - Placeholder]
 
-**Import Library:**
-1. Go to addon preferences
-2. Click "Import Library"
-3. Select ZIP file
-4. Libraries merge automatically
+**Options:**
+- **Library Path:** Set custom storage location
+- **Open Library Folder:** Browse your files
+- **Export Library:** Create backup ZIP
+- **Import Library:** Merge another library
 
-## 🎯 Use Cases
+---
 
-### For Shader Artists
-- Build a personal library of materials
-- Version control complex shader setups
-- Share shader libraries with team
-- Tag by category (metal, fabric, stone)
+## 💡 Tips
 
-### For Technical Artists
-- Maintain utility node groups
-- Track changes across projects
-- Share standardized node setups
-- Build studio-wide libraries
+- **Use version notes** to track what changed in each version
+- **Tag consistently** for easier searching (e.g., always use "metal" not "metals")
+- **Export regularly** to backup your library
+- **Share libraries** with your team via ZIP export/import
+- **Keep the latest version** clean and well-tested
 
-### For Educators
-- Create teaching material libraries
-- Share example node groups with students
-- Version demonstrations and examples
-- Organize by lesson or topic
+---
 
-## 🛠️ Technical Details
+## 🐛 Troubleshooting
 
-### Storage Location
-**Default:** `[Blender Config]/scripts/addons/node_library_data/`
+**"No node group selected"**
+- Make sure you've clicked on a node group node, not just any node
 
-**Custom:** Set in addon preferences
+**Node group doesn't appear after clicking**
+- Check your cursor is inside the editor area
+- Make sure you're in the correct editor type (Shader/Compositor/Geometry)
 
-### File Structure
-```
-node_library_data/
-├── library.json          # Library metadata
-└── node_groups/          # Versioned .blend files
-    ├── MyShader_v1.blend
-    ├── MyShader_v2.blend
-    └── ...
-```
+**Can't find saved node groups**
+- Check the sort/search isn't filtering them out
+- Refresh the library with the refresh button
+- Verify the correct editor type (shader groups only show in shader editor)
 
-### Compatibility
-- **Blender Version:** 3.0 and above
-- **Node Types:** Shader, Compositor, Geometry
-- **Operating Systems:** Windows, macOS, Linux
+---
 
-## 🤝 Contributing
-
-Contributions are welcome! Here's how:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-### Development Setup
-```bash
-git clone https://github.com/yourusername/node-library-manager.git
-cd node-library-manager
-# Symlink to Blender addons folder for development
-```
-
-## 📝 Changelog
+## 📝 Version History
 
 ### v1.1.0 (Current)
-- Complete UI redesign with modern layout
-- Added tags system for organization
-- Search and sort functionality
-- Custom storage path support
-- Export/Import library as ZIP
-- Collapsible version history
-- Formatted timestamps
-- Better error handling and feedback
+- Added custom storage path
+- Added search and sort functionality
+- Added tag system
+- Added collapsible version history
+- Added export/import library
+- Improved UI design
+- Better version management
 
 ### v1.0.0
 - Initial release
-- Basic version control
-- Save and restore node groups
-- Delete versions and node groups
+- Basic save/load functionality
+- Version control
+- Multi-editor support
+
+---
+
+## 🤝 Contributing
+
+Found a bug or have a feature request? Feel free to reach out or submit an issue.
+
+---
 
 ## 📄 License
 
-This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) file for details.
-
-## 👤 Author
-
-**Clay MacDonald**
-
-## 🙏 Acknowledgments
-
-- Blender Foundation for the amazing software
-- Blender community for inspiration and feedback
-- Contributors and users for making this better
-
-## 📮 Support
-
-- **Issues**: [GitHub Issues](../../issues)
-- **Discussions**: [GitHub Discussions](../../discussions)
-- **Documentation**: [Wiki](../../wiki) (coming soon)
-
-## ⭐ Show Your Support
-
-Give a ⭐️ if this project helped you!
+This addon is provided as-is for use in Blender projects.
 
 ---
 
