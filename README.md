@@ -25,6 +25,7 @@ Manage your shader, compositor, and geometry node groups like a pro with full ve
 - Add version notes to track changes
 - Restore any previous version instantly
 - View version history with timestamps
+
 ![version info](images/Screenshot_5.png)
 
 ### Smart Organization
@@ -32,6 +33,7 @@ Manage your shader, compositor, and geometry node groups like a pro with full ve
 - Search by name or tag
 - Sort by name, date, or version count
 - Collapsible version history
+
 ![Tags](images/Screenshot_4.png)
 
 ### Easy Workflow
@@ -39,6 +41,7 @@ Manage your shader, compositor, and geometry node groups like a pro with full ve
 - Works in Shader Editor, Compositor, and Geometry Nodes
 - One-click save from selected node groups
 - Clean, intuitive interface
+
 ![version info](images/Screenshot_3.png)
 
 ### Backup & Sharing
@@ -46,6 +49,7 @@ Manage your shader, compositor, and geometry node groups like a pro with full ve
 - Import libraries from other users
 - Set custom storage location
 - Open library folder directly
+
 ![Tags](images/Screenshot_6.png)
 
 ---
