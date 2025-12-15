@@ -16,8 +16,6 @@ Manage your shader, compositor, and geometry node groups like a pro with full ve
 4. Enable **Node Group Library Manager**
 5. Open Shader Editor or Compositor and press **N** to see the panel
 
-![Installation Screenshot - Placeholder]
-
 ---
 
 ## ✨ Features
@@ -27,24 +25,28 @@ Manage your shader, compositor, and geometry node groups like a pro with full ve
 - Add version notes to track changes
 - Restore any previous version instantly
 - View version history with timestamps
+![version info](images/Screenshot_5.png)
 
 ### Smart Organization
 - Tag your node groups for easy discovery
 - Search by name or tag
 - Sort by name, date, or version count
 - Collapsible version history
+![Tags](images/Screenshot_4.png)
 
 ### Easy Workflow
 - Click any node group to add it to your editor
 - Works in Shader Editor, Compositor, and Geometry Nodes
 - One-click save from selected node groups
 - Clean, intuitive interface
+![version info](images/Screenshot_3.png)
 
 ### Backup & Sharing
 - Export entire library as ZIP
 - Import libraries from other users
 - Set custom storage location
 - Open library folder directly
+![Tags](images/Screenshot_6.png)
 
 ---
 
