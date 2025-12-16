@@ -1,4 +1,4 @@
-# Node Group Library Manager
+# Node Library Manager
 
 **A professional version control and library management system for Blender node groups**
 
